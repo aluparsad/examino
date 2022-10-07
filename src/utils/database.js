@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-// const base_url = "http://localhost:5001"
-const base_url = "https://api-examino.herokuapp.com"
+const base_url = "http://localhost:5001"
+// const base_url = "https://api-examino.herokuapp.com"
 
 
 
@@ -63,6 +63,16 @@ async function getExams(){
     })
 }
 
+async function removeExam(title){
+    const url = base_url+"/test/exam/remove"
+
+    return await axios({
+        method:'post',
+        url:url,
+        data:{title}
+    })
+}
+
 async function createExam(exam){
     const url = base_url+"/test/create";
     if(!exam) return {err:"cannot upload empty exam"}
@@ -86,4 +96,4 @@ async function submitTest(test){
     })
 }
 
-export default { getUser, createUser , getTest , createExam, submitTest, updateUserType ,getExams};
+export default { getUser, createUser , getTest , createExam, submitTest, updateUserType ,getExams, removeExam};

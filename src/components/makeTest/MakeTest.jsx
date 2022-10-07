@@ -3,6 +3,8 @@ import './make-test-style.scss'
 import QuestionForm from './Question.jsx/QuestionForm';
 import db from '../../utils/database'
 
+import RemoveExam from '../deleteExam/RemoveExam';
+
 function MakeTest() {
     const examContext = createContext();
 
@@ -41,7 +43,7 @@ function MakeTest() {
                 <div id="divider-view"> </div>
 
                 <QuestionForm examContext={examContext} />
-
+                <RemoveExam />
             </div>
 
         </examContext.Provider>
