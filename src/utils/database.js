@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const base_url = "http://localhost:5001"
-// const base_url = "https://api-examino.herokuapp.com"
+// const base_url = "http://localhost:5001"
+const base_url = "https://api-examino.herokuapp.com"
 
 
 
