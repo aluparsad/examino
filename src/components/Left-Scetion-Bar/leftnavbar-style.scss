@@ -1,0 +1,33 @@
+#left-section-bar {
+    position: relative;
+    display: flex;
+    top: 10vh;
+    align-items: center;
+
+    width: 15vw;
+    height: 90vh;
+
+    background-color: #edede92e;
+    box-shadow: rgba(149, 157, 165, 0.2) 1px 10px 1px;
+
+    #nav-list {
+        width: 8vw;
+    }
+
+    #nav-list > a {
+        text-decoration: none;
+    }
+
+    #nav-list > a > li {
+        font-size: calc((1ch + 1vw) * (2 / 2));
+        color: black;
+        margin-block: 4vh;
+        list-style-type: none;
+        transform: 0.25s;
+
+        &:hover {
+            color: red;
+            cursor: pointer;
+        }
+    }
+}

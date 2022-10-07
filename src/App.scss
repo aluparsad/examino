@@ -1,0 +1,22 @@
+.App{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+
+  @media screen and (max-width : 600px) {
+    #left-section-bar{
+      display: none;
+    }
+  }
+
+  // #left-section-bar{
+  //   flex:1;
+  // }
+
+  // #test{
+  //   flex:9;
+  // }
+  
+}
+

@@ -1,0 +1,47 @@
+#sentence-container {
+    width: 100%;
+    .input-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            padding-block: 2px;
+            padding-inline: 4px;
+            width: 100%;
+
+            &::selection{
+                border-color: blue;
+            }
+
+        }
+    }
+
+    .save-btn-container {
+        height: 3vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-block: 10px;
+
+        h4 {
+            border-width: 1px;
+            border-radius: 5px;
+            border-style: solid;
+
+            padding-inline: 8px;
+            padding-block: 1px;            
+
+            text-align: center;
+            cursor: pointer;
+
+            transition: 0.25s;
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}

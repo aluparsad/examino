@@ -1,0 +1,22 @@
+#word-form-container {
+    padding: 5vw;
+    .answer-input-container {
+        margin-top: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        label {
+            font-size: calc((1vw + 1vh) * (2 / 2));
+            margin: 15px;
+        }
+
+        input {
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+        }
+        margin-bottom: 50px;
+    }
+}

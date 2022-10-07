@@ -1,0 +1,40 @@
+#mcq-form-container{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 8vh;
+    padding-inline-start: 5vw;
+    padding-inline-end: 8vw;
+
+    
+
+    .input-mcq-options{
+        display: flex;
+        width: 50%;
+        // padding-inline: 1vw;
+        margin-inline: 4vw;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+
+        h6{
+            text-align: center;
+            margin: 1vh;
+            font-size: calc( (1vh + 1vw) * ( 1.5 / 2 ));
+        }
+
+        input{
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+            border-width: 1px;
+            margin-inline: 1vw;
+            padding: 10px;
+        }
+    }
+    
+}

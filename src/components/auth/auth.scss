@@ -1,0 +1,33 @@
+#auth{
+    margin: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #btn-login{
+        color:green;
+        cursor: pointer;
+        
+        &:hover{
+            font-weight: 400;
+            transition: 0.2s;
+        }
+    }
+
+
+    #btn-logout{
+        color: black;
+        cursor: default;
+        a{
+
+            cursor: pointer;
+            color: red;
+
+            &:hover{
+                font-weight: 400;
+                transition: 0.2s;
+            }
+        }
+    }
+    
+}

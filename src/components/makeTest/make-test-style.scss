@@ -1,0 +1,76 @@
+#make-test-container{
+    position: relative;
+    display: flex;
+    margin-top: 11vh;
+    left: 0;
+    width: 85vw;
+    height: 80vh;
+    flex-direction: column;
+    align-content: center;
+
+    .heading{
+        width: 100%;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .test-title{
+            text-align: center;
+            font-size: calc(( 1vh + 1vw ) * ( 2 / 2 ) );
+            cursor:default;
+        }
+
+        input{
+            width: 25vw;
+            height: 3vh;
+            padding-inline: 5px;
+            padding-block: 2px;
+            margin: 5px;
+            margin-inline: 5vw;
+
+            border-radius: 5px;
+            border-width: 1px;
+            border-color: rgba($color: #000000, $alpha: 0.4);
+        }
+
+        .btn-save-test{
+
+            font-size: calc( (1vw + 1vh) * (1.4 / 2));
+            text-align: center;
+
+            border-color: green;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1.6px;
+
+            padding-inline: 2vw;
+            cursor: pointer;
+            transition: 0.25s ease-in;
+            
+            &:hover{
+                background-color: rgba(green, 0.773);
+                font-style: bolder;
+                color: white;
+                padding-inline: 2vw;
+                padding-block: 1px;
+            }
+
+        }
+        
+    }
+
+    #divider-view{
+        position: relative;
+        width: 100%;
+        height: 1px;
+        background-color: rgba($color: #000000, $alpha: 0.24);
+    }
+}
+
+@media screen and (max-width:600px) {
+    #make-test-container{
+        width: 100vw;
+    }
+}

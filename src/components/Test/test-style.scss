@@ -1,0 +1,72 @@
+#test{
+    position: relative;
+    display: flex;
+    top: 10vh;
+    width: 100vw;
+    height: 90vh;
+
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+    
+
+    #search-exam{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        padding: 5px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+
+        font-size: calc((1vw + 1vh) * (1.3 / 2));
+
+        input{
+            width: 50%;
+            padding: 2px;
+        }
+
+        h5{
+            font-style: bold;
+            padding: 5px;
+            border-radius: 5px;
+            border-width: 1px;
+            border-color: yellowgreen;
+            border-style: solid;
+            transition: 0.25s ease-in;
+            cursor: pointer;
+
+            &:hover{
+            color: white;
+            background-color: yellowgreen;
+            }
+        }
+    }
+
+
+    h1{
+        cursor: default;
+        font-weight: 400;
+        transition: 0.25s ease-in;
+
+        color: rgba($color: #000000, $alpha: 0.6);
+        &:hover{
+            font-weight: 500;
+            color: black;
+
+        }
+    }
+
+    #questions-container{
+        height: 80vh;
+        overflow-y: scroll;
+        width: 60vw;
+        padding: 20px;
+        list-style-type: none;
+    }
+}

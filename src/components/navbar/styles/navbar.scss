@@ -1,0 +1,26 @@
+#navbar{
+
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    #app-name{
+        cursor: default;
+        margin: 15px;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        font-variant-caps: all-small-caps;
+        color: #14213d;
+        
+        transition: 0.25s ease-in-out;
+        &:hover{
+            color: #492020;
+        }
+    }
+}
